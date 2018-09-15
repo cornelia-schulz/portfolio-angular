@@ -1,3 +1,16 @@
-<p>
-  header works!
-</p>
+<mat-toolbar>
+  <img class="logo" width="50" alt="Logo" src="../../assets/images/logo.png">
+  <span class="menu">
+    <span class="desktop-menu">
+    <button>HOME |</button><button> PROJECTS |</button><button> CONTACT</button>
+  </span>
+  <button class="mobile-menu" mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>HOME</button>
+    <button mat-menu-item>PROJECTS</button>
+    <button mat-menu-item>CONTACT</button>
+  </mat-menu>
+</span>
+</mat-toolbar>
