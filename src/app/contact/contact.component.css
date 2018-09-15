@@ -1,3 +1,31 @@
+.contact {
+  color: #111;
+}
+
 .location-img {
   width: 100%;
+}
+
+.links {
+  width: 100%;
+  text-align: center;
+}
+
+.contact .profile-img {
+  border-radius: 50%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me > * {
+  width: 100%;
+}
+
+.social-media a {
+  margin: 5px;
 }

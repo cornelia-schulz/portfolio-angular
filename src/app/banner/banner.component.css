@@ -6,7 +6,27 @@
   position: absolute;
   top: 120px;
   left: 290px;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0.8rem;
+  color: antiquewhite;
+}
+
+.title-buttons {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title button {
+  height: 50px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 1px solid antiquewhite;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width: 150px;
+  border-radius: 5px;
   color: antiquewhite;
 }

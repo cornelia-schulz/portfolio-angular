@@ -1,5 +1,6 @@
 mat-toolbar {
   justify-content: space-between;
+  background-color: #bf68c2;
 }
 
 .menu {
@@ -7,7 +8,7 @@ mat-toolbar {
 }
 
 .logo {
-  border-radius: 50%;
+  width: 125px;
 }
 
 .menu button {
@@ -24,10 +25,17 @@ MEDIA QUERIES
 @media (min-width: 992px) {
   .desktop-menu button {
     display: inline;
-    background-color: rgb(33, 33, 33);
-    color: white;
+    background-color: #bf68c2;
+    color: antiquewhite;
     border: none;
-    height: 30px;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+
+  .desktop-menu button:hover {
+    background-color: antiquewhite;
+    color: #bf68c2;
   }
 
   .mobile-menu {
@@ -38,10 +46,11 @@ MEDIA QUERIES
 @media (min-width: 768px) and (max-width: 991px) {
    .desktop-menu button {
      display: inline;
-    background-color: rgb(33, 33, 33);
-    color: white;
+    background-color: #bf68c2;
+    color: antiquewhite;
     border: none;
     height: 30px;
+    font-size: 1.1rem;
   }
 
   .mobile-menu {
@@ -52,10 +61,11 @@ MEDIA QUERIES
 @media (min-width: 480px) and (max-width: 767px) {
   .desktop-menu button {
     display: inline;
-    background-color: rgb(33, 33, 33);
-    color: white;
+    background-color: #bf68c2;
+    color: antiquewhite;
     border: none;
     height: 30px;
+    font-size: 1.1rem;
   }
 
   .mobile-menu {

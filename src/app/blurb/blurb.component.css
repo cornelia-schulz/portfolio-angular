@@ -1,0 +1,8 @@
+.blurb {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.blurb p span {
+  font-size: 1rem;
+}
