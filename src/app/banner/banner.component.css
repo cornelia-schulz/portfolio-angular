@@ -1,0 +1,12 @@
+#banner-video {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 120px;
+  left: 290px;
+  font-size: 4.5rem;
+  letter-spacing: 0.8rem;
+  color: antiquewhite;
+}

@@ -3,7 +3,8 @@ import {
   MatButtonModule,
   MatToolbarModule,
   MatMenuModule,
-  MatIconModule
+  MatIconModule,
+  MatGridListModule
 } from '@angular/material'
 
 @NgModule({
@@ -11,13 +12,15 @@ import {
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule
   ],
   exports: [
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule
   ]
 })
 

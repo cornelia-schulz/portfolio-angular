@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
-
+  name='Cornelia Schulz'
+  title='Web Developer'
   constructor() { }
 
   ngOnInit() {
