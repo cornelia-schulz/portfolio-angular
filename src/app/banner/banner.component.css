@@ -31,12 +31,22 @@
   color: antiquewhite;
 }
 
+.title button:hover {
+  background-color: antiquewhite;
+  color: #180e11;
+}
+
+a:visited {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: #180e11;
+}
+
 a {
   color: antiquewhite;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-a:visited {
-  color: antiquewhite;
-}
