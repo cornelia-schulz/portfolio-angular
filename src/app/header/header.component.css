@@ -3,10 +3,6 @@ mat-toolbar {
   background-color: #bf68c2;
 }
 
-.menu {
-  
-}
-
 .logo {
   width: 125px;
 }
@@ -15,6 +11,14 @@ mat-toolbar {
   display: none;
 }
 
+.menu a {
+  text-decoration: none;
+  color: antiquewhite
+}
+
+.menu a:visited {
+  color: antiquewhite;
+}
 
 /*
 =============================================
