@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blurb.component.css']
 })
 export class BlurbComponent implements OnInit {
-
+  quote = 'The best preparation for tomorrow is doing your best today.'
+  author = 'H. Jackson Brown, Jr.'
   constructor() { }
 
   ngOnInit() {
