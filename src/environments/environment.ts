@@ -2,9 +2,18 @@
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
-  production: false
-};
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyBEFSCxsh41TorelRTwVU2fwcmdCpzukZM",
+    authDomain: "portfolio-c63b3.firebaseapp.com",
+    databaseURL: "https://portfolio-c63b3.firebaseio.com",
+    projectId: "portfolio-c63b3",
+    storageBucket: "portfolio-c63b3.appspot.com",
+    messagingSenderId: "800597557729"
+  }
+  };
 
 /*
  * In development mode, for easier debugging, you can ignore zone related error
