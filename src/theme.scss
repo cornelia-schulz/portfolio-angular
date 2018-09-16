@@ -1,0 +1,185 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+// define a real custom palette (using http://mcg.mbitson.com)
+
+
+$mat-mcgpalette0: (
+    50 : #fef9ee,
+    100 : #fdefd5,
+    200 : #fbe4b9,
+    300 : #f9d99d,
+    400 : #f8d188,
+    500 : #f7c973,
+    600 : #f6c36b,
+    700 : #f5bc60,
+    800 : #f3b556,
+    900 : #f1a943,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #fff0dd,
+    A700 : #ffe5c3,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-mcgpalette1: (
+    50 : #f7edf8,
+    100 : #ecd2ed,
+    200 : #dfb4e1,
+    300 : #d295d4,
+    400 : #c97fcb,
+    500 : #bf68c2,
+    600 : #b960bc,
+    700 : #b155b4,
+    800 : #a94bac,
+    900 : #9b3a9f,
+    A100 : #feedff,
+    A200 : #fcbaff,
+    A400 : #fa87ff,
+    A700 : #f96eff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-mcgpalette2: (
+    50 : #f8e9ec,
+    100 : #eec9d0,
+    200 : #e3a5b0,
+    300 : #d88190,
+    400 : #cf6679,
+    500 : #c74b61,
+    600 : #c14459,
+    700 : #ba3b4f,
+    800 : #b33345,
+    900 : #a62333,
+    A100 : #ffe3e6,
+    A200 : #ffb0b8,
+    A400 : #ff7d8b,
+    A700 : #ff6374,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-mcgpalette3: (
+    50 : #eeedee,
+    100 : #d6d1d4,
+    200 : #bab2b8,
+    300 : #9e939c,
+    400 : #8a7c86,
+    500 : #756571,
+    600 : #6d5d69,
+    700 : #62535e,
+    800 : #584954,
+    900 : #453742,
+    A100 : #fc9fe6,
+    A200 : #fa6dda,
+    A400 : #ff36d1,
+    A700 : #ff1ccb,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$mat-mcgpalette4: (
+    50 : #e3e2e2,
+    100 : #bab7b8,
+    200 : #8c8788,
+    300 : #5d5658,
+    400 : #3b3235,
+    500 : #180e11,
+    600 : #150c0f,
+    700 : #110a0c,
+    800 : #0e080a,
+    900 : #080405,
+    A100 : #ff4eb7,
+    A200 : #ff1ba3,
+    A400 : #e70089,
+    A700 : #ce007a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+// mandatory for theming
+$custom-primary:mat-palette($mat-mcgpalette3);
+$custom-accent:mat-palette($mat-mcgpalette4);
+
+// include the custom theme components into a theme object
+$custom-theme: mat-light-theme($custom-primary, $custom-accent);
+
+// include the custom theme object into the Angular Material theme
+@include angular-material-theme($custom-theme);
+
+// include file in angular.json file
+
+
