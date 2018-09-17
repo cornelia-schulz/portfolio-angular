@@ -12,4 +12,13 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
+  showText(e){
+    let project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
+    project.style.display = "block"
+  }
+
+  hideText(e) {
+    let project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
+    project.style.display = "none"
+  }
 }

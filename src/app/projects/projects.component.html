@@ -1,17 +1,33 @@
 <div class="projects" id="projects">
   <h2>{{title}}</h2>
   <mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile>
-      <img src="../../assets/images/photolocations.jpg" alt="Photolocations"/>
+    <mat-grid-tile id="tile1" (mouseenter)="showText('tile1')" (mouseleave)="hideText('tile1')">
+      <p>
+        <span class="title">Photo Locations</span><br />
+        <span>Find and record your favourite photography spots</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
     </mat-grid-tile>
-    <mat-grid-tile>
-      <img src="../../assets/images/lost-in-translation.jpg" alt="lost in translation"/>
+    <mat-grid-tile id="tile2" (mouseenter)="showText('tile2')" (mouseleave)="hideText('tile2')">
+      <p>
+        <span class="title">Lost in Translation</span><br />
+        <span>A personal blog about Localisation topics</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
     </mat-grid-tile>
-    <mat-grid-tile>
-        <img src="../../assets/images/frogger.jpg" alt="frogger"/>
+    <mat-grid-tile id="tile3" (mouseenter)="showText('tile3')" (mouseleave)="hideText('tile3')">
+      <p>
+        <span class="title">Frogger</span><br />
+        <span>My personal take on the popular game Frogger</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
     </mat-grid-tile>
-    <mat-grid-tile>
-        <img src="../../assets/images/cornelia-schulz-photography.jpg" alt="Cornelia Schulz Photography"/>
+    <mat-grid-tile id="tile4" (mouseenter)="showText('tile4')" (mouseleave)="hideText('tile4')">
+      <p>
+        <span class="title">Cornelia Schulz Photography</span><br />
+        <span>My personal photography site</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
