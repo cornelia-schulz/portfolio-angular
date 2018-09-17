@@ -20,6 +20,7 @@
 .contact-me {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .contact-me > * {
@@ -29,4 +30,11 @@
 
 .social-media a {
   margin: 5px;
+}
+
+.contact-me button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: antiquewhite;
 }

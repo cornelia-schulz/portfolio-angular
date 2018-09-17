@@ -8,17 +8,23 @@
       <a href="mailto:firzhugh@gmail.com" target="_blank"><img src="../../assets/images/email.png" alt="email" /></a>
     </div>
   </div>
-  <form class="contact-me">
+  <form #contactForm="ngForm" class="contact-me">
     <h2>Say hello!</h2>
     <mat-form-field>
-      <input matInput placeholder="Name" />
+      <input required
+        matInput placeholder="Name" 
+        type="text" name="name"/>
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Email">
+      <input 
+        required
+        matInput placeholder="Email"
+        type="text" name="email">
     </mat-form-field>
     <mat-form-field>
       <textarea matInput placeholder="Message" rows="5"></textarea>
     </mat-form-field>
+    <button type="submit" [disabled]="!contactForm.valid">Send</button>
   </form>
   <img class="location-img" src="../../assets/images/Auckland.png" />
 </div>

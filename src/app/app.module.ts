@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { AppMaterialModule } from './app-material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -24,7 +26,9 @@ import { BlurbComponent } from './blurb/blurb.component';
   imports: [
     BrowserModule,
     AppMaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
