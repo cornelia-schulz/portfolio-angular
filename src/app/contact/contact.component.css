@@ -20,13 +20,45 @@
 .contact-me {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .contact-me > * {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .social-media a {
   margin: 5px;
+}
+
+.contact-me button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+/*
+=============================================
+MEDIA QUERIES
+=============================================
+*/
+
+@media (min-width: 992px) {
+  .contact-me > * {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-me > * {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
 }
