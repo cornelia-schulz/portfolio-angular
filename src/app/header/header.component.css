@@ -1,22 +1,29 @@
 mat-toolbar {
   justify-content: space-between;
   background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 7px;
 }
 
 .logo {
   width: 125px;
 }
 
-.menu button {
+.mobile-menu {
+  display: block;
+}
+
+.desktop-menu {
   display: none;
 }
 
-.menu a {
+button a {
   text-decoration: none;
   color: #180e11
 }
 
-.menu a:visited {
+button a:visited {
   color: #180e11;
 }
 
@@ -35,6 +42,10 @@ MEDIA QUERIES
     height: 40px;
     font-size: 1.1rem;
     border-radius: 5px;
+  }
+
+  .desktop-menu {
+    display: block;
   }
 
   .desktop-menu button:hover {
@@ -57,6 +68,10 @@ MEDIA QUERIES
     font-size: 1.1rem;
   }
 
+  .desktop-menu {
+    display: block;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -70,6 +85,10 @@ MEDIA QUERIES
     border: none;
     height: 30px;
     font-size: 1.1rem;
+  }
+
+    .desktop-menu {
+    display: block;
   }
 
   .mobile-menu {
