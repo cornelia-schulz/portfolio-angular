@@ -12,6 +12,7 @@ import { BannerComponent } from './banner/banner.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlurbComponent } from './blurb/blurb.component';
+import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BlurbComponent } from './blurb/blurb.component';
     BannerComponent,
     ProjectsComponent,
     ContactComponent,
-    BlurbComponent
+    BlurbComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { BlurbComponent } from './blurb/blurb.component';
     FormsModule,
     HttpModule
   ],
+  entryComponents: [ProjectDetailsComponent],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ProjectDetailsComponent]
 })
 export class AppModule { }
