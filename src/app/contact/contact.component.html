@@ -8,21 +8,24 @@
       <a href="mailto:firzhugh@gmail.com" target="_blank"><img src="../../assets/images/email.png" alt="email" /></a>
     </div>
   </div>
-  <form #contactForm="ngForm" class="contact-me">
+  <form #contactForm="ngForm" class="contact-me" (ngSubmit)="processForm()">
     <h2>Say hello!</h2>
     <mat-form-field>
       <input required
         matInput placeholder="Name" 
-        type="text" name="name"/>
+        type="text" name="name"
+        [(ngModel)]="name"/>
     </mat-form-field>
     <mat-form-field>
       <input 
         required
         matInput placeholder="Email"
-        type="text" name="email">
+        type="text" name="email"
+        [(ngModel)]="email"/>
     </mat-form-field>
     <mat-form-field>
-      <textarea matInput placeholder="Message" rows="5"></textarea>
+      <textarea matInput placeholder="Message" 
+      rows="5" name="message" [(ngModel)]="message"></textarea>
     </mat-form-field>
     <button type="submit" [disabled]="!contactForm.valid">Send</button>
   </form>
