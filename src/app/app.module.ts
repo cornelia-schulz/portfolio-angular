@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppMaterialModule } from './app-material.module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlurbComponent } from './blurb/blurb.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { ProjectsService } from './shared';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { ProjectDetailsComponent } from './projects/project-details/project-deta
     HttpModule
   ],
   entryComponents: [ProjectDetailsComponent],
-  providers: [],
+  providers: [ProjectsService],
   bootstrap: [AppComponent, ProjectDetailsComponent]
 })
 export class AppModule { }

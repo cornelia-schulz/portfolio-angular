@@ -23,4 +23,5 @@ export class ContactComponent implements OnInit {
     console.log(contactInfo)
   }
 
+  clearForm() {}
 }

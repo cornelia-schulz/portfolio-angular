@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
-
-export interface DialogData {
-  animal: string;
-  name: string;
-}
+import { ProjectsService, Project } from '../shared';
 
 @Component({
   selector: 'app-projects',
@@ -13,14 +9,15 @@ export interface DialogData {
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  animal: string;
-  name: string;
+  projects: Project[];
+  currentProject: Project;
   title='Some of my projects';
   breakpoint: number;
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private projectsservice: ProjectsService) { }
 
   ngOnInit() {
     this.breakpoint = (window.innerWidth <= 500) ? 1 : 2;
+    this.projects = this.projectsservice.projects;
   }
 
   onResize(event) {
@@ -38,9 +35,11 @@ export class ProjectsComponent implements OnInit {
   }
 
   openDialog(tile): void {
+    const project = this.projects[tile-1];
+    console.log(project);
     const dialogRef = this.dialog.open(ProjectDetailsComponent, {
       width: '250px',
-      data: {}
+      data: project
     })
   }
 }
