@@ -27,7 +27,7 @@
       <textarea matInput placeholder="Message" 
       rows="5" name="message" [(ngModel)]="message"></textarea>
     </mat-form-field>
-    <button type="submit" [disabled]="!contactForm.valid">Send</button>
+    <button type="submit" [disabled]="!contactForm.valid" (click)="messageSentSnackBar()">Send</button>
   </form>
   <img class="location-img" src="../../assets/images/Auckland.png" />
 </div>

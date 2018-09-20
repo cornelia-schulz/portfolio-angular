@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-contact',
@@ -9,9 +10,17 @@ export class ContactComponent implements OnInit {
   name: string;
   email: string;
   message: string;
-  constructor() { }
+  constructor(public snackBar: MatSnackBar) { }
 
   ngOnInit() {
+  }
+
+  messageSentSnackBar() {
+    const message = 'Your email has been sent.';
+    const action = 'OK';
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
   }
 
   processForm() {
@@ -20,7 +29,7 @@ export class ContactComponent implements OnInit {
       email: this.email,
       message: this.message
     }
-    console.log(contactInfo)
+    console.log(contactInfo);
   }
 
   clearForm() {}
