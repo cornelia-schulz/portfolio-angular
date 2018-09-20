@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
     const project = this.projects[tile-1];
     console.log(project);
     const dialogRef = this.dialog.open(ProjectDetailsComponent, {
-      width: '250px',
+      width: '350px',
       data: project
     })
   }

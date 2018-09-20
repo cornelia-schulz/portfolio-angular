@@ -1,9 +1,13 @@
 <h1 mat-dialog-title>{{data.name}}</h1>
 <div mat-dialog-content>
-  <p>Technologies used:</p>
+  <img src={{data.image}} alt={{data.name}} />
+  <p>{{data.description}}</p>
+  <p>Technologies I used for this project:</p>
   <ul>
-    <li ngFor>blah</li>
+    <li *ngFor="let technology of data.technologies">{{technology}}</li>
   </ul>
+  <p>Check the code out on <a href={{data.github}} target="_blank">Github</a>.</p>
+  <p>Or go straight to the <a href={{data.website}} target="_blank">website</a>.</p>
 </div>
 <div mat-dialog-actions>
   <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Close</button>
