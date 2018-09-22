@@ -37,7 +37,7 @@ export class ProjectsService {
       technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
       github: 'https://github.com/cornelia-schulz/cornelia-schulz-photography',
       website: 'http://www.cornelia-schulz-photography.com',
-      image: '../../../assets/images/cornelia-schulz-photography.jpg'
+      image: '../../../assets/images/cornelia-schulz-photography-responsive.jpg'
     }
   ]
 }
