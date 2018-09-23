@@ -27,6 +27,14 @@
   margin-right: 5px;
 }
 
+#banner-image {
+  width: 100%;
+}
+
+#banner-video {
+  display: none;
+}
+
 a:visited {
   color: antiquewhite;
 }
@@ -49,6 +57,10 @@ MEDIA QUERIES
 */
 
 @media (min-width: 992px) {
+  #banner-image {
+    display: none;
+  }
+
   .title {
     position: absolute;
     top: 120px;
@@ -78,7 +90,7 @@ MEDIA QUERIES
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .title {
     position: absolute;
     top: 10%;
@@ -96,7 +108,7 @@ MEDIA QUERIES
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .title {
     position: absolute;
     top: 10%;
@@ -107,9 +119,6 @@ MEDIA QUERIES
   }
 
   .title-buttons {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: none;
   }
 }
