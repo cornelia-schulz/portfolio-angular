@@ -11,17 +11,13 @@
 }
 
 .title-buttons {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
 
 .title button {
   height: 50px;
   background-color: Transparent;
-  background-repeat: no-repeat;    
-  border: 1px solid antiquewhite;
+  background-repeat: no-repeat;
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -29,11 +25,6 @@
   border-radius: 5px;
   color: antiquewhite;
   margin-right: 5px;
-}
-
-.title button:hover {
-  background-color: antiquewhite;
-  color: #180e11;
 }
 
 a:visited {
@@ -67,11 +58,17 @@ MEDIA QUERIES
     color: antiquewhite;
   }
 
+  .title-buttons {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
   .title button {
     height: 50px;
     background-color: Transparent;
     background-repeat: no-repeat;
-    border: 1px solid antiquewhite;
     cursor: pointer;
     overflow: hidden;
     outline: none;
@@ -90,6 +87,13 @@ MEDIA QUERIES
     letter-spacing: 0.8rem;
     color: antiquewhite;
   }
+
+  .title-buttons {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -100,5 +104,12 @@ MEDIA QUERIES
     font-size: 1.5rem;
     letter-spacing: 0.4rem;
     color: antiquewhite;
+  }
+
+  .title-buttons {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
