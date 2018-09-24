@@ -19,7 +19,7 @@ export class ContactComponent implements OnInit {
     const message = 'Your email has been sent.';
     const action = 'OK';
     this.snackBar.open(message, action, {
-      duration: 2000,
+      duration: 5000,
     });
   }
 
@@ -30,7 +30,12 @@ export class ContactComponent implements OnInit {
       message: this.message
     }
     console.log(contactInfo);
+    this.clearForm();
   }
 
-  clearForm() {}
+  clearForm() {
+      this.name = '',
+      this.email = '',
+      this.message = ''
+  }
 }
