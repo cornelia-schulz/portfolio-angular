@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
+import { Http, Headers } from '@angular/http';
+import { Mail, MailService } from '../shared';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +12,8 @@ export class ContactComponent implements OnInit {
   name: string;
   email: string;
   message: string;
-  constructor(public snackBar: MatSnackBar) { }
+  mail: Mail;
+  constructor(public snackBar: MatSnackBar, public mailservice: MailService) { }
 
   ngOnInit() {
   }
@@ -24,12 +27,13 @@ export class ContactComponent implements OnInit {
   }
 
   processForm() {
-    const contactInfo = {
+    const data = {
       name: this.name,
       email: this.email,
       message: this.message
     }
-    console.log(contactInfo);
+    console.log(data);
+    this.mailservice.sendMail(data)
     this.clearForm();
   }
 
@@ -38,4 +42,6 @@ export class ContactComponent implements OnInit {
       this.email = '',
       this.message = ''
   }
+
+  
 }
