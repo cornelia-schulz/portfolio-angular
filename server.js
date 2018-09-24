@@ -1,20 +1,22 @@
-let express = require('express'),
-    path = require('path'),
-    bodyParser = require('body-parser'),
-    cors = require('cors');
+const path = require('path')
+const express = require('express')
+const http = require('http')
+const app = express()
+const bodyParser = require('body-parser')
 
-const server = express();
-server.use(bodyParser.json());
-server.use(cors());
-const port = process.env.PORT || 3000;
+app.use(bodyParser.json())
+app.use(express.static(path.join(__dirname, '/dist/portfolio-angular')))
 
-server.listen(port, function(req, res) {
-    console.log('Listening on port: ', port);
-});
+const port = process.env.PORT || 3000
 
-server.set('view engine', 'ejs');
-server.use(express.static('public'));
-
-server.get('/', function (req, res){
-    res.render(index);
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname))
 })
+
+const server = http.createServer(app)
+
+server.listen(port, () => {
+  console.log('Server is listening on port: ', port)
+})
+
+module.exports = app

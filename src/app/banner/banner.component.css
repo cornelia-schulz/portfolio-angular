@@ -11,17 +11,13 @@
 }
 
 .title-buttons {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
 
 .title button {
   height: 50px;
   background-color: Transparent;
-  background-repeat: no-repeat;    
-  border: 1px solid antiquewhite;
+  background-repeat: no-repeat;
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -31,9 +27,12 @@
   margin-right: 5px;
 }
 
-.title button:hover {
-  background-color: antiquewhite;
-  color: #180e11;
+#banner-image {
+  width: 100%;
+}
+
+#banner-video {
+  display: none;
 }
 
 a:visited {
@@ -41,7 +40,7 @@ a:visited {
 }
 
 a:hover {
-  color: #180e11;
+  color: antiquewhite;
 }
 
 a {
@@ -58,6 +57,10 @@ MEDIA QUERIES
 */
 
 @media (min-width: 992px) {
+  #banner-image {
+    display: none;
+  }
+
   .title {
     position: absolute;
     top: 120px;
@@ -67,11 +70,17 @@ MEDIA QUERIES
     color: antiquewhite;
   }
 
+  .title-buttons {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
   .title button {
     height: 50px;
     background-color: Transparent;
     background-repeat: no-repeat;
-    border: 1px solid antiquewhite;
     cursor: pointer;
     overflow: hidden;
     outline: none;
@@ -79,9 +88,13 @@ MEDIA QUERIES
     border-radius: 5px;
     color: antiquewhite;
   }
+
+  #banner-video {
+    display: block;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .title {
     position: absolute;
     top: 10%;
@@ -90,9 +103,20 @@ MEDIA QUERIES
     letter-spacing: 0.8rem;
     color: antiquewhite;
   }
+
+  #banner-video {
+    display: block;
+  }
+
+  .title-buttons {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .title {
     position: absolute;
     top: 10%;
@@ -100,5 +124,9 @@ MEDIA QUERIES
     font-size: 1.5rem;
     letter-spacing: 0.4rem;
     color: antiquewhite;
+  }
+
+  .title-buttons {
+    display: none;
   }
 }

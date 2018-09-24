@@ -35,6 +35,8 @@ MEDIA QUERIES
 
 @media (min-width: 992px) {
   .desktop-menu button {
+    background-image: none;
+    text-shadow: none;
     display: inline;
     background-color: #fff;
     color: #180e11;
@@ -48,9 +50,8 @@ MEDIA QUERIES
     display: block;
   }
 
-  .desktop-menu button:hover {
-    background-color: antiquewhite;
-    color: #fff;
+  .desktop-menu button a:hover {
+    border-bottom: 0.5px solid #606c88;
   }
 
   .mobile-menu {
@@ -59,13 +60,20 @@ MEDIA QUERIES
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-   .desktop-menu button {
-     display: inline;
+  .desktop-menu button {
+    background-image: none;
+    text-shadow: none;
+    display: inline;
     background-color: #fff;
     color: #180e11;
     border: none;
-    height: 30px;
+    height: 40px;
     font-size: 1.1rem;
+    border-radius: 5px;
+  }
+
+  .desktop-menu button a:hover {
+    border-bottom: 0.5px solid #606c88;
   }
 
   .desktop-menu {
@@ -79,15 +87,22 @@ MEDIA QUERIES
 
 @media (min-width: 480px) and (max-width: 767px) {
   .desktop-menu button {
+    background-image: none;
+    text-shadow: none;
     display: inline;
     background-color: #fff;
     color: #180e11;
     border: none;
-    height: 30px;
+    height: 40px;
     font-size: 1.1rem;
+    border-radius: 5px;
   }
 
-    .desktop-menu {
+  .desktop-menu button a:hover {
+    border-bottom: 0.5px solid #606c88;
+  }
+
+  .desktop-menu {
     display: block;
   }
 
