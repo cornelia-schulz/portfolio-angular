@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000
 
 const server = http.createServer(app)
 
-app.use('api/v1/nodemailer', nodemailerRoutes)
+app.use('/api/v1/nodemailer', nodemailerRoutes)
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname))

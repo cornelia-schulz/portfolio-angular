@@ -10,15 +10,12 @@ const pw = process.env.USER_EMAIL_PASSWORD
 let transport = {
   host: 'smtp.gmail.com',
   service: 'gmail',
-  port: 2525,
+  port: 25,
   auth: {
     user: email,
     pass: pw
   }
 }
-
-console.log(email)
-console.log(pw)
 
 let transporter = nodemailer.createTransport(transport)
 

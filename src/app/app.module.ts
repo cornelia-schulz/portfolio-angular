@@ -14,7 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlurbComponent } from './blurb/blurb.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
-import { ProjectsService } from './shared';
+import { ProjectsService, MailService } from './shared';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { ProjectsService } from './shared';
     HttpClientModule
   ],
   entryComponents: [ProjectDetailsComponent],
-  providers: [ProjectsService],
+  providers: [ProjectsService, MailService],
   bootstrap: [AppComponent, ProjectDetailsComponent]
 })
 export class AppModule { }

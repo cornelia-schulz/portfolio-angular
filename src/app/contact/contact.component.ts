@@ -32,8 +32,13 @@ export class ContactComponent implements OnInit {
       email: this.email,
       message: this.message
     }
+    
+    this.mailservice.sendMail(data).subscribe((response) => {
+      console.log('response from post data is ', response);
+    },(error)=>{
+      console.log('error during post is ', error)
+    });
     console.log(data);
-    this.mailservice.sendMail(data)
     this.clearForm();
   }
 

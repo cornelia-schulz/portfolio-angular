@@ -1,20 +1,7 @@
-<<<<<<< HEAD
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
-
-@Injectable()
-export class MailService {
-  constructor(private http: HttpClient) {}
-
-  sendMail (mail) {
-    return this.http.post('./api/nodemailer/send', mail )
-  }
-=======
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Mail } from './mail.module'
+import { Mail } from './mail.model';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -28,8 +15,8 @@ export class MailService {
   constructor(private http: HttpClient) {}
 
   sendMail(mail: Mail): Observable<Mail> {
+    console.log("sending mail")
     return this.http.post<Mail>(this.url, mail, httpOptions)
   }
 
->>>>>>> 0cb320e621959661013bfdd2b129cd19740bd6aa
 }
