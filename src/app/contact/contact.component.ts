@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
+import { MailService, Mail } from '../shared';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,8 @@ export class ContactComponent implements OnInit {
   name: string;
   email: string;
   message: string;
-  constructor(public snackBar: MatSnackBar) { }
+  currentMail: Mail;
+  constructor(public snackBar: MatSnackBar, private mailservice: MailService) { }
 
   ngOnInit() {
   }
@@ -24,12 +26,13 @@ export class ContactComponent implements OnInit {
   }
 
   processForm() {
-    const contactInfo = {
+    this.currentMail = {
       name: this.name,
       email: this.email,
       message: this.message
     }
-    console.log(contactInfo);
+    console.log(this.currentMail);
+    this.mailservice.sendMail(this.currentMail)
   }
 
   clearForm() {}
