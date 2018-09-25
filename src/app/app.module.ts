@@ -33,7 +33,7 @@ import { ProjectsService } from './shared';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   entryComponents: [ProjectDetailsComponent],
   providers: [ProjectsService],

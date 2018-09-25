@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
-import { MailService, Mail } from '../shared';
+import { Http, Headers } from '@angular/http';
+import { Mail, MailService } from '../shared';
 
 @Component({
   selector: 'app-contact',
@@ -11,8 +12,8 @@ export class ContactComponent implements OnInit {
   name: string;
   email: string;
   message: string;
-  currentMail: Mail;
-  constructor(public snackBar: MatSnackBar, private mailservice: MailService) { }
+  mail: Mail;
+  constructor(public snackBar: MatSnackBar, public mailservice: MailService) { }
 
   ngOnInit() {
   }
@@ -21,19 +22,26 @@ export class ContactComponent implements OnInit {
     const message = 'Your email has been sent.';
     const action = 'OK';
     this.snackBar.open(message, action, {
-      duration: 2000,
+      duration: 5000,
     });
   }
 
   processForm() {
-    this.currentMail = {
+    const data = {
       name: this.name,
       email: this.email,
       message: this.message
     }
-    console.log(this.currentMail);
-    this.mailservice.sendMail(this.currentMail)
+    console.log(data);
+    this.mailservice.sendMail(data)
+    this.clearForm();
   }
 
-  clearForm() {}
+  clearForm() {
+      this.name = '',
+      this.email = '',
+      this.message = ''
+  }
+
+  
 }

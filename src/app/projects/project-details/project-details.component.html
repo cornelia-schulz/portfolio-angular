@@ -10,5 +10,5 @@
     Or go straight to the <a href={{data.website}} target="_blank">website</a>.</p>
 </div>
 <div mat-dialog-actions>
-  <button id="close-dialog" mat-button cdkFocusInitial>Close</button>
+  <button id="close-dialog" mat-button (click)="onNoClick()" cdkFocusInitial>Close</button>
 </div>
