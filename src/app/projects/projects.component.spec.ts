@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ProjectsService } from '../shared/projects.service';
 import { ProjectsComponent } from './projects.component';
+import { MatGridListModule,
+         MatIconModule,
+         MatDialogModule } from '@angular/material';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -8,7 +11,15 @@ describe('ProjectsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProjectsComponent ]
+      imports: [
+        MatGridListModule,
+        MatIconModule,
+        MatDialogModule
+      ],
+      declarations: [ ProjectsComponent ],
+      providers: [
+        ProjectsService
+      ],
     })
     .compileComponents();
   }));
