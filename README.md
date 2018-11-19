@@ -1,9 +1,7 @@
 # Portfolio
 
-A portfolio of some of my projects. 
+A portfolio of some of my projects.
 
+Deployed with AWS. View the site on
 
-http://portfolio-cornelia-schulz.herokuapp.com/ 
-
-
-http://www.cornelia-schulz.com
+cornelia-schulz.com
