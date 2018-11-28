@@ -31,12 +31,12 @@ export class ContactComponent implements OnInit {
       name: this.name,
       email: this.email,
       message: this.message
-    }
-    
+    };
+
     this.mailservice.sendMail(data).subscribe((response) => {
       console.log('response from post data is ', response);
-    },(error)=>{
-      console.log('error during post is ', error)
+    }, (error) => {
+      console.log('error during post is ', error);
     });
     console.log(data);
     this.clearForm();
@@ -45,8 +45,7 @@ export class ContactComponent implements OnInit {
   clearForm() {
       this.name = '',
       this.email = '',
-      this.message = ''
+      this.message = '';
   }
 
-  
 }
