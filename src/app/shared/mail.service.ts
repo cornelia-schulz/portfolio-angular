@@ -7,16 +7,16 @@ const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'
   })
-}
+};
 
 @Injectable()
 export class MailService {
-  url = 'api/v1/nodemailer/send'
+  url = 'api/v1/nodemailer/send';
   constructor(private http: HttpClient) {}
 
   sendMail(mail: Mail): Observable<Mail> {
-    console.log("sending mail")
-    return this.http.post<Mail>(this.url, mail, httpOptions)
+    console.log('sending mail');
+    return this.http.post<Mail>(this.url, mail, httpOptions);
   }
 
 }

@@ -17,7 +17,7 @@ mat-grid-tile p {
 }
 
 #tile1 {
-  background-image: url("../../assets/images/photolocations.jpg");
+  background-image: url("../../assets/images/photolocations.jpg?v=1");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -39,7 +39,7 @@ mat-grid-tile p {
 }
 
 #tile3 {
-  background-image: url("../../assets/images/frogger.jpg");
+  background-image: url("../../assets/images/frogger.jpg?v=1");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -50,7 +50,7 @@ mat-grid-tile p {
 }
 
 #tile4 {
-  background-image: url("../../assets/images/cornelia-schulz-photography.jpg");
+  background-image: url("../../assets/images/cornelia-schulz-photography.jpg?v=1");
   background-repeat: no-repeat;
   background-size: 100%;
 }

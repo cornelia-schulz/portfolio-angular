@@ -10,7 +10,7 @@ export class ProjectsService {
       technologies: ['React', 'Express', 'Knex', 'Redux', 'Google Maps API', 'Jest', 'Enzyme'],
       github: 'https://github.com/cornelia-schulz/photolocations',
       website: ' http://www.photolocations.nz',
-      image: '../../../assets/images/photolocations-responsive.jpg'
+      image: '../../../assets/images/photolocations-responsive.jpg?v=1'
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export class ProjectsService {
       technologies: ['GatsbyJs', 'React', 'Graphql,', 'Disqus'],
       github: 'https://github.com/cornelia-schulz/lost-in-translation',
       website: 'http://www.cornelia-schulz.net',
-      image: '../../../assets/images/lost-in-translation-responsive.jpg'
+      image: '../../../assets/images/lost-in-translation-responsive.jpg?v=1'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export class ProjectsService {
       technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Canvas', 'OOP'],
       github: 'https://github.com/cornelia-schulz/frogger',
       website: 'http://firzhugh.github.io/frogger/',
-      image: '../../../assets/images/frogger-responsive.jpg'
+      image: '../../../assets/images/frogger-responsive.jpg?v=1'
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export class ProjectsService {
       technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
       github: 'https://github.com/cornelia-schulz/cornelia-schulz-photography',
       website: 'http://www.cornelia-schulz-photography.com',
-      image: '../../../assets/images/cornelia-schulz-photography-responsive.jpg'
+      image: '../../../assets/images/cornelia-schulz-photography-responsive.jpg?v=1'
     }
-  ]
+  ];
 }
