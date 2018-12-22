@@ -28,7 +28,7 @@ mat-grid-tile p {
 }
 
 #tile2 {
-  background-image: url("../../assets/images/lost-in-translation.jpg");
+  background-image: url("../../assets/images/lost-in-translation.jpg?v=1");
   background-repeat: no-repeat;
   background-size: 100%;
 }
