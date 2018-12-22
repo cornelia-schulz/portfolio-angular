@@ -11,7 +11,7 @@ import { ProjectsService, Project } from '../shared';
 export class ProjectsComponent implements OnInit {
   projects: Project[];
   currentProject: Project;
-  title='Some of my projects';
+  title = 'Some of my projects';
   breakpoint: number;
   constructor(public dialog: MatDialog, private projectsservice: ProjectsService) { }
 
@@ -24,26 +24,30 @@ export class ProjectsComponent implements OnInit {
     this.breakpoint = (event.target.innerWidth <= 500) ? 1 : 2;
   }
 
-  showText(e){
-    let project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
-    project.style.display = "block";
+  showText(e) {
+    const project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
+    project.style.display = 'block';
   }
 
   hideText(e) {
-    let project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
-    project.style.display = "none";
+    const project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
+    project.style.display = 'none';
   }
 
   openDialog(tile): void {
-    const project = this.projects[tile-1];
-    let size: string
-    if (window.innerWidth <= 400) { size = '100%'}
-    else if (window.innerWidth <= 700) { size = '380px'}
-    else size = '50%'
+    const project = this.projects[tile - 1];
+    let size: string;
+    if (window.innerWidth <= 400) {
+      size = '100%';
+    } else if (window.innerWidth <= 700) {
+      size = '380px';
+    } else {
+      size = '50%';
+    }
     const dialogRef = this.dialog.open(ProjectDetailsComponent, {
       width: size,
       data: project,
       panelClass: 'projects-modalbox'
-    })
+    });
   }
 }
