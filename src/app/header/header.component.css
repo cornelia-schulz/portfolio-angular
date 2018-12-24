@@ -6,6 +6,10 @@ mat-toolbar {
   padding-bottom: 7px;
 }
 
+.mat-toolbar-single-row {
+  height: 85px;
+}
+
 .mobile-menu {
   display: block;
 }
@@ -30,9 +34,9 @@ button a:visited {
   text-indent: -9999px; 
   text-align: left; 
   background-position: -1px -0px; 
-  height: 130px; 
+  height: 100px; 
   width: 312px;
-  margin-left: -19px;
+  margin-left: -5px;
 }
 
 
