@@ -9,7 +9,7 @@ export class ProjectsService {
       description: 'A personal project that lets you mark your favourite photo spots on a map.',
       technologies: ['React', 'Express', 'Knex', 'Redux', 'Google Maps API', 'Jest', 'Enzyme'],
       github: 'https://github.com/cornelia-schulz/photolocations',
-      website: ' http://www.photolocations.nz',
+      website: ' https://www.photolocations.nz',
       image: '../../../assets/images/photolocations-responsive.jpg?v=1'
     },
     {
