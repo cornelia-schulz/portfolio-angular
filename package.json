@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng build && node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,7 +22,7 @@
     "@angular/cli": "~6.1.4",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
-    "@angular/compiler-cli": "^6.1.0",
+    "@angular/compiler-cli": "^7.2.7",
     "@angular/core": "^6.1.0",
     "@angular/fire": "^5.0.0",
     "@angular/forms": "^6.1.0",
@@ -42,7 +42,7 @@
     "node-mailjet": "^3.2.1",
     "nodemailer": "^4.6.8",
     "rxjs": "^6.0.0",
-    "typescript": "~2.7.2",
+    "typescript": "^3.2.4",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -60,7 +60,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^3.1.4",
+    "karma": "^4.0.1",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",

@@ -1,13 +1,19 @@
 #banner-video {
   width: 100%;
+  display: none;
+}
+
+#banner-image {
+  width: 100%;
 }
 
 .title {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  bottom: 34%;
+  left: 8%;
   font-size: 1rem;
   color: antiquewhite;
+  opacity: 0.7;
 }
 
 .title-buttons {
@@ -25,14 +31,7 @@
   border-radius: 5px;
   color: antiquewhite;
   margin-right: 5px;
-}
-
-#banner-image {
-  width: 100%;
-}
-
-#banner-video {
-  display: none;
+  font-family: 'Raleway', sans-serif;
 }
 
 a:visited {
@@ -56,77 +55,82 @@ MEDIA QUERIES
 =============================================
 */
 
-@media (min-width: 992px) {
-  #banner-image {
-    display: none;
-  }
-
+@media (min-width: 360px) {
   .title {
-    position: absolute;
-    top: 120px;
-    left: 290px;
-    font-size: 2.5rem;
-    letter-spacing: 0.8rem;
-    color: antiquewhite;
-  }
-
-  .title-buttons {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .title button {
-    height: 50px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    width: 150px;
-    border-radius: 5px;
-    color: antiquewhite;
-  }
-
-  #banner-video {
-    display: block;
+    bottom: 27%;
   }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 375px) {
   .title {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 2.5rem;
-    letter-spacing: 0.8rem;
-    color: antiquewhite;
-  }
-
-  #banner-video {
-    display: block;
-  }
-
-  .title-buttons {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    bottom: 65%;
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 411px) {
+  .title {
+    bottom: 21%;
+  }
+}
+
+@media (min-width: 480px) {
   .title {
     position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 1.5rem;
+    top: 234px;
+    left: 29px;
+    font-size: 1.2em;
     letter-spacing: 0.4rem;
     color: antiquewhite;
   }
 
+  #banner-image {
+    display: none;
+  }
+
+  #banner-video {
+    width: 100%;
+    display: block;
+  }
+
+  .title h1 {
+    font-size: 2.5em;
+  }
+
   .title-buttons {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    top: 322px;
+    left: 73px;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    position: absolute;
+    top: 379px;
+    left: 61px;
+    font-size: 2.5em;
+    letter-spacing: 0.4rem;
+    color: antiquewhite;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    top: 489px;
+    left: 57px;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1480px) {
+  .title {
+    top: 607px;
+    left: 118px;
   }
 }
