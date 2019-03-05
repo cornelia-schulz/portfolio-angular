@@ -9,7 +9,7 @@
 
 .title {
   position: absolute;
-  bottom: 34%;
+  bottom: 54%;
   left: 8%;
   font-size: 1rem;
   color: antiquewhite;
@@ -57,19 +57,19 @@ MEDIA QUERIES
 
 @media (min-width: 360px) {
   .title {
-    bottom: 27%;
+    bottom: 56%;
   }
 }
 
 @media (min-width: 375px) {
   .title {
-    bottom: 65%;
+    bottom: 57%;
   }
 }
 
 @media (min-width: 411px) {
   .title {
-    bottom: 21%;
+    bottom: 58%;
   }
 }
 
@@ -132,5 +132,11 @@ MEDIA QUERIES
   .title {
     top: 607px;
     left: 118px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .title {
+    top: 856px;
   }
 }
