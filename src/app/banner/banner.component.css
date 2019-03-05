@@ -140,3 +140,14 @@ MEDIA QUERIES
     top: 856px;
   }
 }
+
+@media (min-width: 2500px) {
+  .title {
+    top: 917px;
+    left: 193px;
+  }
+
+  .title h1 {
+    font-size: 4.5em;
+  }
+}
