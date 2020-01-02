@@ -1,0 +1,37 @@
+<div class="projects" id="projects">
+  <h2>{{title}}</h2>
+  <mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
+    <mat-grid-tile id="tile1" (mouseenter)="showText('tile1')" (mouseleave)="hideText('tile1')"
+      (click)="openDialog('1')">
+      <p>
+        <span class="title">Photo Locations</span><br />
+        <span>Find and record your favourite photography spots</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
+    </mat-grid-tile>
+    <mat-grid-tile id="tile2" (mouseenter)="showText('tile2')" (mouseleave)="hideText('tile2')"
+      (click)="openDialog('2')">
+      <p>
+        <span class="title">Lost in Translation</span><br />
+        <span>A personal blog about Localisation topics</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
+    </mat-grid-tile>
+    <mat-grid-tile id="tile3" (mouseenter)="showText('tile3')" (mouseleave)="hideText('tile3')"
+      (click)="openDialog('3')">
+      <p>
+        <span class="title">Frogger</span><br />
+        <span>My personal take on the popular game Frogger</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
+    </mat-grid-tile>
+    <mat-grid-tile id="tile4" (mouseenter)="showText('tile4')" (mouseleave)="hideText('tile4')"
+      (click)="openDialog('4')">
+      <p>
+        <span class="title">Cornelia Schulz Photography</span><br />
+        <span>My personal photography site</span><br />
+        <span>More info <mat-icon>touch_app</mat-icon></span>
+      </p>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

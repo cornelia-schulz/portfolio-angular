@@ -1,0 +1,71 @@
+.contact {
+    color: #111;
+  }
+  
+  .location-img {
+    width: 100%;
+  }
+  
+  .email, .github, .linkedin
+  { display: inline-block; background: url('../../assets/images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+  
+  .email { background-position: -1px -101px; width: 32px; height: 32px; }
+  .github { background-position: -34px -101px; width: 32px; height: 32px; }
+  .linkedin { background-position: -67px -101px; width: 32px; height: 32px; }
+  
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact .profile-img {
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+  }
+  
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .contact-me > * {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .social-media a {
+    margin: 5px;
+  }
+  
+  .contact-me button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+  }
+  
+  /*
+  =============================================
+  MEDIA QUERIES
+  =============================================
+  */
+  
+  @media (min-width: 992px) {
+    .contact-me > * {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .contact-me > * {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 767px) {
+  
+  }

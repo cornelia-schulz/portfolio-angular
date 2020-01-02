@@ -1,0 +1,100 @@
+mat-toolbar {
+    justify-content: space-between;
+    background-color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 7px;
+  }
+  
+  .mat-toolbar-single-row {
+    height: 85px;
+  }
+  
+  .mobile-menu {
+    display: block;
+    margin-right: 10px;
+    padding-right: 17px;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  button {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: #180e11;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  button a:visited {
+    color: #180e11;
+  }
+  
+  .logo { 
+    display: inline-block; 
+    background: url('../../assets/images/CS_web_developer_black.png') no-repeat; 
+    overflow: hidden; 
+    background-size: contain;
+    text-indent: -9999px; 
+    text-align: left; 
+    background-position: -1px -0px; 
+    height: 80px; 
+    width: 312px;
+  }
+  
+  .material-icons {
+    font-size: 35px;
+  }
+  
+  
+  /*
+  =============================================
+  MEDIA QUERIES
+  =============================================
+  */
+  
+  @media (min-width: 480px) {
+    .desktop-menu button {
+      background-image: none;
+      text-shadow: none;
+      display: inline;
+      background-color: #fff;
+      color: #180e11;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 5px;
+    }
+  
+    .desktop-menu button a:hover {
+      border-bottom: 0.5px solid #606c88;
+    }
+  
+    .desktop-menu {
+      display: block;
+      margin-right: 5px;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  
+    button {
+      margin-left: 15px;
+    }
+  
+    .logo {
+      height: 100px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+  }

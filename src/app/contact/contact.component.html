@@ -1,0 +1,30 @@
+<div class="contact" id="contact">
+    <div class="links">
+      <img class="profile-img" src="../../assets/images/profile.png" alt="profile picture" />
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/cornelia-schulz" target="_blank"><img class="linkedin" src="../../assets/images/transparent.gif"
+            alt="linked in" /></a>
+        <a href="https://github.com/cornelia-schulz" target="_blank"><img class="github" src="../../assets/images/transparent.gif" alt="github" /></a>
+        <a href="mailto:firzhugh@gmail.com" target="_blank"><img class="email" src="../../assets/images/transparent.gif" alt="email" /></a>
+      </div>
+    </div>
+    <form #contactForm="ngForm" class="contact-me" (ngSubmit)="processForm()">
+      <h2>Say hello!</h2>
+      <mat-form-field>
+        <input matInput placeholder="Name" type="text" name="name" [(ngModel)]="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input 
+          required
+          matInput placeholder="Email"
+          type="text" name="email"
+          [(ngModel)]="email"/>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput placeholder="Message" 
+        rows="5" name="message" [(ngModel)]="message"></textarea>
+      </mat-form-field>
+      <button type="submit" [disabled]="!contactForm.valid" (click)="messageSentSnackBar()">Send</button>
+    </form>
+    <img class="location-img" src="../../assets/images/sydney.png" />
+  </div>

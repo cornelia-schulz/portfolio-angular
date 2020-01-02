@@ -1,0 +1,76 @@
+.projects {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  mat-grid-tile p {
+    margin-left: 0;
+    padding-left: 10%;
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-weight: 600;
+    display: none;
+  }
+  
+  .cs-web-developer-black-small, .email, .github, .linkedin
+  { display: inline-block; background: url('../../assets/images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+   
+  .cs-web-developer-black-small { background-position: -0px -0px; width: 240px; height: 100px; }
+  .email { background-position: -0px -100px; width: 32px; height: 32px; }
+  .github { background-position: -32px -100px; width: 32px; height: 32px; }
+  .linkedin { background-position: -64px -100px; width: 32px; height: 32px; }
+  
+  #tile1 {
+    background-image: url("../../assets/images/photolocations.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile1:hover {
+    background-image: none;
+    background-color: #f0da17;
+  }
+  
+  #tile2 {
+    background-image: url("../../assets/images/lost-in-translation.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile2:hover {
+    background-image: none;
+    background-color: #f10b63;
+  }
+  
+  #tile3 {
+    background-image: url("../../assets/images/frogger.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile3:hover {
+    background-image: none;
+    background-color: #6ee65e;
+  }
+  
+  #tile4 {
+    background-image: url("../../assets/images/cornelia-schulz-photography.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile4:hover {
+    background-image: none;
+    background-color: #682acc;
+  }
+  
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+  }
