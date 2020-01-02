@@ -1,53 +1,29 @@
-#banner-video {
-  width: 100%;
-  display: none;
+.banner {
+  position: relative;
 }
 
 #banner-image {
   width: 100%;
 }
 
+#banner-image img {
+  display: block;
+  width: 100%;
+}
+
 .title {
   position: absolute;
-  bottom: 54%;
-  left: 8%;
-  font-size: 1rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: right;
   color: antiquewhite;
   opacity: 0.7;
 }
 
-.title-buttons {
-  display: none;
+.title h1 {
+  margin-right: 2rem;
 }
-
-.title button {
-  height: 50px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  width: 130px;
-  border-radius: 5px;
-  color: antiquewhite;
-  margin-right: 5px;
-  font-family: 'Raleway', sans-serif;
-}
-
-a:visited {
-  color: antiquewhite;
-}
-
-a:hover {
-  color: antiquewhite;
-}
-
-a {
-  color: antiquewhite;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
 
 /*
 =============================================
@@ -55,45 +31,9 @@ MEDIA QUERIES
 =============================================
 */
 
-@media (min-width: 360px) {
-  .title {
-    bottom: 56%;
-  }
-}
-
-@media (min-width: 375px) {
-  .title {
-    bottom: 57%;
-  }
-}
-
-@media (min-width: 411px) {
-  .title {
-    bottom: 58%;
-  }
-}
-
 @media (min-width: 480px) {
-  .title {
-    position: absolute;
-    top: 234px;
-    left: 29px;
-    font-size: 1.2em;
-    letter-spacing: 0.4rem;
-    color: antiquewhite;
-  }
-
-  #banner-image {
-    display: none;
-  }
-
-  #banner-video {
-    width: 100%;
-    display: block;
-  }
-
   .title h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
 
   .title-buttons {
@@ -102,52 +42,8 @@ MEDIA QUERIES
 }
 
 @media (min-width: 768px) {
-  .title {
-    top: 322px;
-    left: 73px;
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 992px) {
-  .title {
-    position: absolute;
-    top: 379px;
-    left: 61px;
-    font-size: 2.5em;
-    letter-spacing: 0.4rem;
-    color: antiquewhite;
-  }
-}
-
-@media (min-width: 1200px) {
-  .title {
-    top: 489px;
-    left: 57px;
-    font-size: 2.5em;
-  }
-}
-
-@media (min-width: 1480px) {
-  .title {
-    top: 607px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 2000px) {
-  .title {
-    top: 856px;
-  }
-}
-
-@media (min-width: 2500px) {
-  .title {
-    top: 917px;
-    left: 193px;
-  }
-
   .title h1 {
-    font-size: 4.5em;
+    font-size: 2.7rem;
+    margin-right: 1.5rem;
   }
 }

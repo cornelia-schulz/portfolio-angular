@@ -1,11 +1,16 @@
-<img id="banner-image" src="../../assets/images/Hopetoun.jpg?v=1" alt="Hopetoun" />
-<video id="banner-video" autoplay muted loop id="banner-video">
-  <source src="../../assets/images/Glebe_Point_h264-420_720p_25_UHQ.mp4" type="video/mp4">
-</video>
-<div class="title">
-  <h1>{{title}}</h1>
-  <!-- <div class="title-buttons">
-    <button><a href="#projects">View projects</a></button>
-    <button><a href="#contact">Get in touch</a></button>
-  </div> -->
+<div class="banner">
+  <picture id="banner-image">
+    <source 
+      media="(min-width: 650px)"
+      srcset="../../assets/images/glebe-point.jpg">
+    <source 
+      media="(min-width: 465px)"
+      srcset="../../assets/images/glebe-point.jpg">
+    <img 
+      src="../../assets/images/opera-house.jpg" 
+      alt="Sydney">
+  </picture>
+  <div class="title">
+    <h1>{{title}}</h1>
+  </div>
 </div>
