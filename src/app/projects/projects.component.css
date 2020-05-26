@@ -67,7 +67,50 @@
     background-image: none;
     background-color: #682acc;
   }
+
+  #tile5 {
+    background-image: url("../../assets/images/cornelia-schulz-photography-react.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   
+  #tile5:hover {
+    background-image: none;
+    background-color: #0033ff;
+  }
+  
+  #tile6 {
+    background-image: url("../../assets/images/where-in-the-world.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile6:hover {
+    background-image: none;
+    background-color: #ff6600;
+  }
+
+  #tile7 {
+    background-image: url("../../assets/images/url-shortening.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile7:hover {
+    background-image: none;
+    background-color: #43A047;
+  }
+
+  #tile8 {
+    background-image: url("../../assets/images/pricing-component.jpg?v=1");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  #tile8:hover {
+    background-image: none;
+    background-color: #EC407A;
+  }
   
   .title {
     font-size: 1.8rem;
