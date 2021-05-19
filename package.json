@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "preinstall": "npm install -g angular-cli",
-    "postinstall": "ng build --aot",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build --target production"
   },
   "private": true,
   "dependencies": {
