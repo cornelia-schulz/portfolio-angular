@@ -1,3 +1,3 @@
 # PortfolioAngular
 
-Portfolio site built with Angular, Angular Material and TypeScript.
+Portfolio site to showcase some of my work built with Angular, Angular Material and TypeScript.
