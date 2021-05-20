@@ -1,11 +1,28 @@
 <div class="contact" id="contact">
     <div class="links">
-      <img class="profile-img" src="../../assets/images/profile.png" alt="profile picture" />
+      <img class="profile-img" src="../../assets/images/profile.png" alt="profile picture" loading="lazy" />
       <div class="social-media">
-        <a href="https://www.linkedin.com/in/cornelia-schulz" target="_blank"><img class="linkedin" src="../../assets/images/transparent.gif"
-            alt="linked in" /></a>
-        <a href="https://github.com/cornelia-schulz" target="_blank"><img class="github" src="../../assets/images/transparent.gif" alt="github" /></a>
-        <a href="mailto:firzhugh@gmail.com" target="_blank"><img class="email" src="../../assets/images/transparent.gif" alt="email" /></a>
+        <a 
+          href="https://www.linkedin.com/in/cornelia-schulz"
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="linkedin" src="../../assets/images/transparent.gif" alt="linked in" loading="lazy" />
+        </a>
+        <a
+          href="https://github.com/cornelia-schulz"
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="github" src="../../assets/images/transparent.gif" alt="github" loading="lazy" />
+        </a>
+        <a
+          href="mailto:firzhugh@gmail.com"
+          target="_blank"
+          rel="noopener"
+        >
+          <img class="email" src="../../assets/images/transparent.gif" alt="email" loading="lazy" />
+        </a>
       </div>
     </div>
     <form #contactForm="ngForm" class="contact-me" (ngSubmit)="processForm()">
@@ -26,5 +43,5 @@
       </mat-form-field>
       <button type="submit" [disabled]="!contactForm.valid" (click)="messageSentSnackBar()">Send</button>
     </form>
-    <img class="location-img" src="../../assets/images/sydney.png" />
+    <img class="location-img" src="../../assets/images/sydney.png" alt="Location Map" loading="lazy" />
   </div>
