@@ -5,12 +5,12 @@ export class ProjectsService {
   projects = [
     {
       id: 1,
-      name: 'Photo Locations',
-      description: 'A personal project that lets you mark your favourite photo spots on a map.',
-      technologies: ['React', 'Express', 'Knex', 'Redux', 'Google Maps API', 'Jest', 'Enzyme', 'I18next'],
-      github: 'https://github.com/cornelia-schulz/photolocations',
-      website: 'https://www.photolocations.nz',
-      image: '../../../assets/images/photolocations-responsive.jpg?v=1'
+      name: 'Cornelia Schulz Photography React',
+      description: 'A new version of my photography portfolio.',
+      technologies: ['HTML', 'SCSS', 'JavaScript', 'React', 'Jest', 'Knex', 'Express'],
+      github: 'https://github.com/cornelia-schulz/photography',
+      website: 'https://cornelia-photography.herokuapp.com/',
+      image: '../../../assets/images/cornelia-schulz-photography-react-responsive.jpg?v=1'
     },
     {
       id: 2,
@@ -41,12 +41,12 @@ export class ProjectsService {
     },
     {
       id: 5,
-      name: 'Cornelia Schulz Photography React',
-      description: 'A new version of my photography portfolio.',
-      technologies: ['HTML', 'SCSS', 'JavaScript', 'React', 'Jest', 'Knex', 'Express'],
-      github: 'https://github.com/cornelia-schulz/photography',
-      website: 'https://cornelia-photography.herokuapp.com/',
-      image: '../../../assets/images/cornelia-schulz-photography-react-responsive.jpg?v=1'
+      name: 'Photo Locations',
+      description: 'A personal project that lets you mark your favourite photo spots on a map.',
+      technologies: ['React', 'Express', 'Knex', 'Redux', 'Google Maps API', 'Jest', 'Enzyme', 'I18next'],
+      github: 'https://github.com/cornelia-schulz/photolocations',
+      website: 'https://www.photolocations.nz',
+      image: '../../../assets/images/photolocations-responsive.jpg?v=1'
     },
     {
       id: 6,
