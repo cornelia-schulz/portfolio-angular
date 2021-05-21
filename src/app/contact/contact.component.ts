@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material';
-import { Http, Headers } from '@angular/http';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Mail, MailService } from '../shared';
 
 @Component({

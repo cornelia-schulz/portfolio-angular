@@ -16,7 +16,7 @@
   }
   
   .cs-web-developer-black-small, .email, .github, .linkedin
-  { display: inline-block; background: url('../../assets/images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+  { display: inline-block; background: url('/assets/images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
    
   .cs-web-developer-black-small { background-position: -0px -0px; width: 240px; height: 100px; }
   .email { background-position: -0px -100px; width: 32px; height: 32px; }
@@ -24,7 +24,7 @@
   .linkedin { background-position: -64px -100px; width: 32px; height: 32px; }
   
   #tile1 {
-    background-image: url("../../assets/images/cornelia-schulz-photography-react.jpg?v=1");
+    background-image: url("/assets/images/cornelia-schulz-photography-react.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -35,7 +35,7 @@
   }
   
   #tile2 {
-    background-image: url("../../assets/images/lost-in-translation.jpg?v=1");
+    background-image: url("/assets/images/lost-in-translation.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -46,7 +46,7 @@
   }
   
   #tile3 {
-    background-image: url("../../assets/images/frogger.jpg?v=1");
+    background-image: url("/assets/images/frogger.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -57,7 +57,7 @@
   }
   
   #tile4 {
-    background-image: url("../../assets/images/cornelia-schulz-photography.jpg?v=1");
+    background-image: url("/assets/images/cornelia-schulz-photography.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -68,7 +68,7 @@
   }
 
   #tile5 {
-    background-image: url("../../assets/images/photolocations.jpg?v=1");
+    background-image: url("/assets/images/photolocations.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -79,7 +79,7 @@
   }
   
   #tile6 {
-    background-image: url("../../assets/images/where-in-the-world.jpg?v=1");
+    background-image: url("/assets/images/where-in-the-world.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -90,7 +90,7 @@
   }
 
   #tile7 {
-    background-image: url("../../assets/images/url-shortening.jpg?v=1");
+    background-image: url("/assets/images/url-shortening.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -101,7 +101,7 @@
   }
 
   #tile8 {
-    background-image: url("../../assets/images/pricing-component.jpg?v=1");
+    background-image: url("/assets/images/pricing-component.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }

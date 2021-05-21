@@ -36,7 +36,7 @@ mat-toolbar {
   
   .logo { 
     display: inline-block; 
-    background: url('../../assets/images/CS_web_developer_black.png') no-repeat; 
+    background: url('/assets/images/CS_web_developer_black.png') no-repeat; 
     overflow: hidden; 
     background-size: contain;
     text-indent: -9999px; 

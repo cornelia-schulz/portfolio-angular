@@ -7,7 +7,7 @@
   }
   
   .email, .github, .linkedin
-  { display: inline-block; background: url('../../assets/images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+  { display: inline-block; background: url('/assets/images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
   
   .email { background-position: -1px -101px; width: 32px; height: 32px; }
   .github { background-position: -34px -101px; width: 32px; height: 32px; }
