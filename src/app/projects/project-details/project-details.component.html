@@ -7,7 +7,7 @@
     <li *ngFor="let technology of data.technologies">{{technology}}</li>
   </ul>
   <p>Check the code out on <a href={{data.github}} target="_blank">Github</a>.
-    Or go straight to the <a href={{data.website}} target="_blank">website</a>.</p>
+     <span *ngIf="data.website">Or go straight to the <a href={{data.website}} target="_blank">website</a>.</span></p>
 </div>
 <div mat-dialog-actions>
   <button id="close-dialog" mat-button (click)="onNoClick()" cdkFocusInitial>Close</button>
