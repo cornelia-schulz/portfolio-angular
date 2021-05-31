@@ -18,7 +18,7 @@ export class ProjectsService {
       description: 'A blog about various topics related to Localisation.',
       technologies: ['GatsbyJs', 'React', 'Graphql,', 'Disqus'],
       github: 'https://github.com/cornelia-schulz/lost-in-translation',
-      website: 'https://www.lost-in-translation.online/',
+      website: 'https://www.lost-in-translation.nz/',
       image: '../../../assets/images/lost-in-translation-responsive.jpg?v=1'
     },
     {
