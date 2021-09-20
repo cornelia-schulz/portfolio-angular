@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css']
 })

@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ProjectsService, Project } from '../shared';
 
 @Component({
   selector: 'app-projects',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })

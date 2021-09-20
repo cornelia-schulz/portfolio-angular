@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blurb',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './blurb.component.html',
   styleUrls: ['./blurb.component.css']
 })
