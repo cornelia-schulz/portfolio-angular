@@ -46,33 +46,6 @@ export class ProjectsService {
       technologies: ['React', 'Express', 'Knex', 'Redux', 'Google Maps API', 'Jest', 'Enzyme', 'I18next'],
       github: 'https://github.com/cornelia-schulz/photolocations',
       image: '../../../assets/images/photolocations-responsive.jpg?v=1'
-    },
-    {
-      id: 6,
-      name: 'Where in the world',
-      description: 'A coding challenge from Frontend Mentor.',
-      technologies: ['HTML', 'CSS', 'VueJs', 'Axios', 'SCSS'],
-      github: 'https://github.com/cornelia-schulz/fm-rest-countries-api-with-color-theme-switcher',
-      website: 'https://frosty-albattani-ec5ec1.netlify.app/',
-      image: '../../../assets/images/where-in-the-world-responsive.jpg?v=1'
-    },
-    {
-      id: 7,
-      name: 'URL Shortening',
-      description: 'A coding challenge from Frontend Mentor.',
-      technologies: ['React', 'HTML', 'CSS', 'JavaScript', 'Axios', 'Typescript'],
-      github: 'https://github.com/cornelia-schulz/fm-url-shortening-api',
-      website: 'https://objective-einstein-222a85.netlify.app/',
-      image: '../../../assets/images/url-shortening-responsive.jpg?v=1'
-    },
-    {
-      id: 8,
-      name: 'Pricing Component',
-      description: 'A coding challenge from Frontend Mentor.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/cornelia-schulz/fm-pricing-component-with-toggle',
-      website: 'https://cornelia-schulz.github.io/fm-pricing-component-with-toggle/',
-      image: '../../../assets/images/pricing-component-responsive.jpg?v=1'
     }
   ];
 }
