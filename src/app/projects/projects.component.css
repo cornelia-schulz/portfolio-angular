@@ -3,14 +3,20 @@
     margin: 0 auto;
   }
 
+  mat-grid-tile {
+    box-shadow: 0.6px 1.1px 1.1px hsl(0deg 0% 0% / 0.48);
+  }
+
   mat-grid-tile p {
     color: #fff;
-    font-size: 3vw;
     font-weight: 600;
     display: none;
-    line-height: 4vw;
-    padding-left: 10px;
-    padding-right: 10px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description, .more-info {
+    font-size: 3vw;
   }
   
   .cs-web-developer-black-small, .email, .github, .linkedin
@@ -22,7 +28,7 @@
   .linkedin { background-position: -64px -100px; width: 32px; height: 32px; }
   
   #tile1 {
-    background-image: url("/assets/images/cornelia-schulz-photography-react.jpg?v=1");
+    background-image: url("/assets/images/pie-review.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -44,7 +50,7 @@
   }
   
   #tile3 {
-    background-image: url("/assets/images/frogger.jpg?v=1");
+    background-image: url("/assets/images/cornelia-schulz-photography-react.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -55,7 +61,7 @@
   }
   
   #tile4 {
-    background-image: url("/assets/images/cornelia-schulz-photography.jpg?v=1");
+    background-image: url("/assets/images/photolocations.jpg?v=1");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -64,63 +70,41 @@
     background-image: none;
     background-color: #682acc;
   }
-
-  #tile5 {
-    background-image: url("/assets/images/photolocations.jpg?v=1");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  
-  #tile5:hover {
-    background-image: none;
-    background-color: #0033ff;
-  }
-  
-  #tile6 {
-    background-image: url("/assets/images/where-in-the-world.jpg?v=1");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  
-  #tile6:hover {
-    background-image: none;
-    background-color: #ff6600;
-  }
-
-  #tile7 {
-    background-image: url("/assets/images/url-shortening.jpg?v=1");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  
-  #tile7:hover {
-    background-image: none;
-    background-color: #43A047;
-  }
-
-  #tile8 {
-    background-image: url("/assets/images/pricing-component.jpg?v=1");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  
-  #tile8:hover {
-    background-image: none;
-    background-color: #EC407A;
-  }
   
   .title {
     font-size: 4vw;
     font-weight: 600;
+    line-height: 2.5;
   }
 
-  @media only screen and (min-width: 600px) {
+  @media (min-width: 600px) {
     .title {
-      font-size: 2.8vw;
+      font-size: 2.5vw;
+      line-height: 1;
+    }
+
+    .description {
+      font-size: 1.6vw;
+      line-height: 1.3;
+    }
+
+    .more-info {
+      font-size: 1.6vw;
+      line-height: 2.5;
+    }
+  }
+
+  @media (min-width: 484px) {
+    .title {
+      font-size: 3.5vw;
+      line-height: 2;
     }
 
     mat-grid-tile p {
-      font-size: 2vw;
-      line-height: 1;
+      margin: 0 10px;
+    }
+
+    .description, .more-info {
+      font-size: 2.5vw;
     }
   }

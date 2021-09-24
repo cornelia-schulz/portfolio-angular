@@ -1,0 +1,13 @@
+.about-me {
+  font-size: 18px;
+  line-height: 1.6;;
+  margin: 100px auto;
+  max-width: 90%;
+}
+
+
+@media (min-width: 1120px) {
+  .about-me {
+    max-width: 1000px;
+  }
+}

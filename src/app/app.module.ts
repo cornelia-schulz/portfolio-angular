@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsService, MailService } from './shared';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProjectDetailsComponent } from './projects/project-details/project-deta
     BlurbComponent,
     ContactComponent,
     ProjectsComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

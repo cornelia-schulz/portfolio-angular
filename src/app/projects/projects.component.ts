@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[];
   currentProject: Project;
-  title = 'Some of my projects';
+  title = 'What I\'ve been working on';
   breakpoint: number;
   constructor(public dialog: MatDialog, private projectsservice: ProjectsService) { }
 

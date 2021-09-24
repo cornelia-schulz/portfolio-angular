@@ -43,5 +43,11 @@
       </mat-form-field>
       <button type="submit" [disabled]="!contactForm.valid" (click)="messageSentSnackBar()">Send</button>
     </form>
-    <img class="location-img" src="../../assets/images/sydney.png" alt="Location Map" loading="lazy" />
+    <picture id="map">
+      <source
+        media="(min-width: 650px)"
+        srcset="../../assets/images/christchurch.PNG"
+      >
+      <img class="location-img" src="../../assets/images/christchurch-mobile.PNG" alt="Location Map" loading="lazy" />
+    </picture>
   </div>

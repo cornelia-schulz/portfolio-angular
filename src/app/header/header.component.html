@@ -1,18 +1,18 @@
-<mat-toolbar>
+<mat-toolbar  class="app-toolbar">
     <img class="logo" alt="Logo" src="../../assets/images/transparent.gif">
     <span class="menu">
       <span class="desktop-menu">
-      <button id="home-button"><a href="/">HOME</a></button>
-      <button><a href="#projects">PROJECTS</a></button>
-      <button><a href="#contact">CONTACT</a></button>
+      <button class="navigation-button"><a href="#banner">ABOUT</a></button>
+      <button class="navigation-button"><a href="#projects">PROJECTS</a></button>
+      <button class="navigation-button"><a href="#contact">CONTACT</a></button>
     </span>
-    <button aria-label="Menu toggle" class="mobile-menu" mat-button [matMenuTriggerFor]="menu">
-      <img class="mobile-menu-toggle" src="../../assets/images/outline_menu_white_36dp.png" alt="menu" />
+    <button aria-label="Menu toggle" class="mobile-menu-toggle" mat-button [matMenuTriggerFor]="menu">
+      <img src="../../assets/images/outline_menu_white_36dp.png" alt="menu" />
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item><a href="/">HOME</a></button>
-      <button mat-menu-item><a href="#projects">PROJECTS</a></button>
-      <button mat-menu-item><a href="#contact">CONTACT</a></button>
+    <mat-menu #menu="matMenu" class="mobile-menu">
+      <button class="navigation-button" mat-menu-item><a href="#banner">ABOUT ME</a></button>
+      <button class="navigation-button" mat-menu-item><a href="#projects">PROJECTS</a></button>
+      <button class="navigation-button" mat-menu-item><a href="#contact">CONTACT</a></button>
     </mat-menu>
   </span>
-  </mat-toolbar>
+</mat-toolbar>
