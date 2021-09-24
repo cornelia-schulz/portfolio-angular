@@ -27,11 +27,14 @@ export class ProjectsComponent implements OnInit {
   }
 
   showText(e) {
+    document.getElementById(e).classList.toggle('flipped');
     const project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
+    console.log(document.getElementById(e))
     project.style.display = 'block';
   }
 
   hideText(e) {
+    document.getElementById(e).classList.toggle('flipped');
     const project = <HTMLElement>document.getElementById(e).firstChild.firstChild;
     project.style.display = 'none';
   }

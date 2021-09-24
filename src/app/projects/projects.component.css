@@ -5,6 +5,15 @@
 
   mat-grid-tile {
     box-shadow: 0.6px 1.1px 1.1px hsl(0deg 0% 0% / 0.48);
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
   }
 
   mat-grid-tile p {
@@ -13,6 +22,20 @@
     display: none;
     line-height: 1.5;
     text-align: center;
+  }
+
+  mat-grid-tile p {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+  }
+
+  .mat-grid-tile.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
   }
 
   .description, .more-info {
